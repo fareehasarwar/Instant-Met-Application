@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative"
+            android:layout_height="70dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/coin"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:id="@+id/imageView7" />
+
+            <TextView
+                android:id="@+id/numbering"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/imageView7"
+                android:layout_alignStart="@+id/imageView7"
+                android:layout_centerVertical="true"
+                android:text="11"
+                android:layout_marginLeft="4dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_sticker"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+
+
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView7"
+                android:layout_toRightOf="@+id/imageView7"
+                android:background="#ffffff"
+                android:src="@drawable/icon_like" />
+
+            <TextView
+                android:id="@+id/list_name"
+                android:layout_width="150dp"
+
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/numbering"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/item_sticker"
+                android:layout_toRightOf="@+id/item_sticker"
+                android:text="app"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/follow_btn"
+                android:background="@drawable/rounded_react_fan">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/plusicon"
+                    android:id="@+id/follow_img"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:layout_width="50dp"
+
+                    android:text="Follow"
+                    android:id="@+id/follow_txt"
+
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="	#BA55D3"
+                    android:background="#ffffff"
+                    android:layout_height="20dp"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/rep_img"
+                android:visibility="invisible"
+                android:background="@drawable/ticmark" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="320dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/relative"
+            android:src="@mipmap/item_seperator" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

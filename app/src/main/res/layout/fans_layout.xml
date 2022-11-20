@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#495f77"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:id="@+id/back_button">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_centerInParent="true"
+            android:src="@drawable/back_icn"
+            android:layout_centerVertical="true"
+
+
+           />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+               android:layout_marginLeft="45dp"
+                android:background="#80ffffff"
+               />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:gravity="center"
+            android:layout_marginLeft="65dp"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:layout_centerVertical="true"
+
+            android:layout_alignParentLeft="true"
+
+            android:id="@+id/activity_data"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+           android:id="@+id/logout_btn"
+            android:text="Log Out"
+            android:layout_marginLeft="50dp"
+           android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+
+            />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:scrollbars="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

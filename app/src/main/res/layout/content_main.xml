@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hifza.instantmet.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffffff"
+    android:id="@+id/top_bar"
+    android:layout_below="@+id/seperator"
+   >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_sticker"
+        android:layout_width="60dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+
+android:src="@drawable/camera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginLeft="12dp"
+
+        android:onClick="uploadSelfie"
+
+        />
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_sticker"
+        android:layout_alignStart="@+id/item_sticker"
+        android:layout_below="@+id/item_sticker"
+        android:text="Upload"
+        android:layout_marginLeft="9dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+android:layout_marginTop="20dp"
+        android:layout_below="@+id/imagelayout"
+        android:id="@+id/imagesepe"
+        android:layout_marginLeft="85dp"
+
+        android:src="@mipmap/lineee"
+        android:scaleType="fitXY"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginLeft="100dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffff"
+
+        />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_vie"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffff"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

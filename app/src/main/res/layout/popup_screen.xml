@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+ >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item_sticker"
+            android:layout_width="50dp"
+
+            android:layout_height="50dp"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/desc"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_toStartOf="@+id/time"
+            android:text="Name"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_sticker"
+            android:layout_alignLeft="@+id/list_name"
+            android:layout_alignStart="@+id/list_name"
+            android:text="Description"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/item_sticker"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Time"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:src="@mipmap/item_seperator" />
+
+    <RelativeLayout
+        android:id="@+id/imagelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textdesc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="Add something abou your image"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textdesc"
+
+
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:id="@+id/imagesepe"
+
+  android:layout_above="@+id/layout"
+        android:background="@mipmap/item_seperator"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/like_view"
+    android:layout_marginLeft="20dp">
+        <ImageView
+            android:id="@+id/imageView_like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_like" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView_like"
+        android:layout_toRightOf="@+id/imageView_like"
+        android:gravity="center"
+        android:text="Likes"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+</RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageshare"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/comnt"
+            android:layout_marginLeft="10dp"
+
+            android:src="@mipmap/share_image_icon" />
+
+        <TextView
+            android:id="@+id/comnt"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:gravity="center"
+            android:text="Share"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/list_description"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/comnt"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/comnt"
+            android:layout_marginBottom="231dp"
+            android:text="description "
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/upload_image"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:onClick="backToActivity"
+        android:background="@drawable/back" />
+    <RelativeLayout
+        android:id="@+id/upload_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:onClick="uploadImage"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/dp_img"
+
+            android:layout_alignParentTop="true"
+            android:background="@drawable/add_photo_icon"
+            app:civ_border_width="1dp"/>
+    </RelativeLayout>
+    <!-- EditText layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upload_image"
+        android:id="@+id/relativeLayout2">
+
+
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/rounded_rectangle_login"
+        android:hint="Full Name"
+        android:textColorHint="#000000"
+        android:paddingLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:id="@+id/edt_name"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_alignLeft="@+id/edt_name"
+        android:layout_alignStart="@+id/edt_name"
+        android:layout_below="@+id/edt_name"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_rectangle_login"
+        android:paddingLeft="30dp"
+        android:hint="Email"
+        android:textSize="15dp"
+        android:textColorHint="#000000"/>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/edt_email"
+        android:layout_alignStart="@+id/edt_email"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_rectangle_login"
+        android:paddingLeft="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        android:textColorHint="#000000"
+        android:textColor="@android:color/holo_blue_bright"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp">
+
+        <EditText
+            android:id="@+id/edt_age"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+
+            android:layout_alignParentTop="true"
+
+            android:background="@drawable/rounded_rectangle_login"
+            android:paddingLeft="30dp"
+            android:hint="Age"
+            android:textSize="15dp"
+            android:textColorHint="#000000"
+            android:textColor="@android:color/holo_blue_bright"/>
+
+        <EditText
+            android:id="@+id/edt_gender"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rounded_rectangle_login"
+            android:paddingLeft="30dp"
+            android:hint="Gender"
+            android:inputType="none"
+            android:textSize="15dp"
+            android:textColorHint="#000000"
+            android:textColor="@android:color/holo_blue_bright"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/signup_btn"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:onClick="UploadSignUpData"
+        android:background="@drawable/signup_btn_design"/>
+
+</RelativeLayout>
+
